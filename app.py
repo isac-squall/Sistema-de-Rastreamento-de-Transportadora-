@@ -3,6 +3,23 @@ Aplicação Streamlit para Sistema de Rastreamento de Transportadora
 Execute com: streamlit run app.py
 """
 
+import os
+
+# prepare streamlit configuration for headless/cloud environments
+# avoid first-run email prompt by creating credentials file in home dir
+home_streamlit = os.path.expanduser("~/.streamlit")
+os.makedirs(home_streamlit, exist_ok=True)
+cred_file = os.path.join(home_streamlit, "credentials.toml")
+if not os.path.exists(cred_file):
+    try:
+        with open(cred_file, "w", encoding="utf-8") as f:
+            f.write("[general]\nemail = \"\"\n")
+    except Exception:
+        pass
+
+# force headless (cloud) mode
+os.environ.setdefault("STREAMLIT_SERVER_HEADLESS", "true")
+
 import streamlit as st
 import pandas as pd
 import os
