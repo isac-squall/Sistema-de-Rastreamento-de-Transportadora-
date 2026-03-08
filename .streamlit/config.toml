@@ -13,7 +13,7 @@ level = "info"
 
 [server]
 port = 8501
-headless = false
+headless = true              # required for cloud deployment
 runOnSave = true
 maxUploadSize = 200
 enableXsrfProtection = true
