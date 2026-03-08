@@ -1,0 +1,3 @@
+07/03/2026 18:50:27 - Rastreamento - WARNING - Tentativa 1 falhou para AA123456789BR: 403 Client Error:  for url: https://proxyapp.correios.com.br/v1/sro-rastro/AA123456789BR
+07/03/2026 18:50:27 - Rastreamento - WARNING - Tentativa 2 falhou para AA123456789BR: 403 Client Error:  for url: https://proxyapp.correios.com.br/v1/sro-rastro/AA123456789BR
+07/03/2026 18:50:28 - Rastreamento - ERROR - Falha em todas as 3 tentativas para AA123456789BR: 403 Client Error:  for url: https://proxyapp.correios.com.br/v1/sro-rastro/AA123456789BR

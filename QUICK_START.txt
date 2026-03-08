@@ -1,0 +1,239 @@
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║    🚀 QUICK START - SISTEMA DE RASTREAMENTO TRANSPORTADORA   ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ PASSO 1: INICIAR (30 segundos)                            ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+  1. Localize o arquivo: executar_streamlit.bat
+  2. Clique 2x (duplo-clique)
+  3. PowerShell abre
+  4. Aguarde 3 segundos
+  5. Navegador abre em: http://localhost:8501
+  6. ✅ Sistema está funcionando!
+
+  ⏱️ Tempo total: 30 segundos
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ PASSO 2: ENTENDER O TRABALHO (5 minutos)                  ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+  1. Abra o arquivo: GUIA_RAPIDO.md
+  2. Leia até o final
+  3. Você entenderá:
+     ✓ O que o sistema faz
+     ✓ Como usar cada botão
+     ✓ Qual é o próximo passo
+
+  ⏱️ Tempo total: 5 minutos
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ PASSO 3: CONFIGURAR (10 minutos)                          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+  1. Abra o arquivo: .env (com editor de texto)
+     
+  2. Encontre e edite:
+     
+     API_BASE_URL=https://sua-api-aqui.com
+     API_KEY=sua-chave-aqui
+     API_TIMEOUT=30
+     API_RETRIES=3
+     RATE_LIMIT_REQUESTS=100
+     RATE_LIMIT_PERIOD=60
+     
+  3. Salve o arquivo
+
+  ⓘ  Não tem a URL? Leia: GUIA_INTEGRACAO.md
+
+  ⏱️ Tempo total: 10 minutos
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ PASSO 4: ADAPTAR MÉTODOS (15-30 minutos)                  ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+  1. Abra o arquivo: api_rastreamento.py
+  
+  2. Procure por "IMPORTANTE: Adapte" (tem 3 lugares)
+  
+  3. Adapte esses 3 métodos:
+     • consultar_por_nf()
+     • consultar_por_rastreamento()
+     • _processar_resposta_api()
+  
+  4. Use como referência:
+     ✓ Documentação da sua API
+     ✓ EXEMPLOS_INTEGRACAO.py (10 exemplos prontos!)
+     ✓ GUIA_INTEGRACAO.md (passo-a-passo)
+
+  ⓘ  Não sabe por onde começar?
+     → Veja EXEMPLOS_INTEGRACAO.py
+     → Copie um exemplo parecido com sua API
+     → Adapte os campos
+
+  ⏱️ Tempo total: 15-30 minutos (depende da API)
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ PASSO 5: TESTAR CONEXÃO (1 minuto)                        ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+  1. No Streamlit, clique em: 🏠 Início
+  
+  2. Procure por: "Testar Conexão com API"
+  
+  3. Clique no botão
+  
+  4. Aguarde o resultado:
+     ✅ Verde = Tudo OK, próximo passo!
+     ❌ Vermelho = Verifique .env e api_rastreamento.py
+
+  ⏱️ Tempo total: 1 minuto
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ PASSO 6: CRIAR MODELO (1 minuto)                          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+  1. No Streamlit, clique em: ⚙️ Processar Rastreamentos
+  
+  2. Procure por: "Criar Modelo"
+  
+  3. Clique no botão
+  
+  4. Um arquivo será criado:
+     📁 dados/rastreamento_modelo.xlsx
+  
+  5. ✅ Abra esse arquivo e preencha com seus dados!
+
+  ⏱️ Tempo total: 1 minuto
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ PASSO 7: PREENCHER DADOS (varia)                          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+  1. Abra: dados/rastreamento_modelo.xlsx (Excel)
+  
+  2. Preencha os dados:
+     
+     Coluna A: NF (Número da Nota Fiscal)
+     Coluna B: RASTREAMENTO (Código de Rastreamento)
+     
+     Exemplo:
+     ┌─────────────┬────────────────┐
+     │ NF          │ RASTREAMENTO   │
+     ├─────────────┼────────────────┤
+     │ NF123456789 │ BR123456789012 │
+     │ NF987654321 │ BR987654321098 │
+     │ NF555666777 │ BR555666777888 │
+     └─────────────┴────────────────┘
+  
+  3. Salve o arquivo
+
+  ⏱️ Tempo total: Varia (seus dados)
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ PASSO 8: PROCESSAR (5 minutos)                            ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+  1. No Streamlit, clique em: ⚙️ Processar Rastreamentos
+  
+  2. Veja: "Processar Rastreamentos"
+  
+  3. Clique em: "Selecionar arquivo Excel"
+  
+  4. Escolha: dados/rastreamento_modelo.xlsx
+  
+  5. Clique em: "Processar"
+  
+  6. Aguarde barra de progresso 100%
+  
+  7. Verifique o relatório final
+
+  ✅ Excel atualizado com status!
+  ✅ Backup criado automaticamente!
+
+  ⏱️ Tempo total: 5 minutos (depende da quantidade de dados)
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ PASSO 9: VISUALIZAR (1 minuto)                            ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+  1. No Streamlit, clique em: 📊 Visualizar Dados
+  
+  2. Seu Excel carrega automaticamente
+  
+  3. Veja:
+     ✓ Todos os registros
+     ✓ Status de cada um (com emojis coloridos)
+     ✓ Filtrar por status
+     ✓ Buscar por rastreamento
+
+  ⏱️ Tempo total: 1 minuto
+
+═══════════════════════════════════════════════════════════════
+
+📊 RESUMO DO TEMPO TOTAL
+
+  Passo 1: Iniciar ..................... 30 segundos
+  Passo 2: Entender ................... 5 minutos
+  Passo 3: Configurar ................. 10 minutos
+  Passo 4: Adaptar métodos ............ 15-30 minutos
+  Passo 5: Testar ..................... 1 minuto
+  Passo 6: Criar modelo .............. 1 minuto
+  Passo 7: Preencher dados ............ Varia
+  Passo 8: Processar .................. 5 minutos
+  Passo 9: Visualizar ................. 1 minuto
+  
+  TOTAL: 38 minutos a 1 hora (sem contar dados)
+
+═══════════════════════════════════════════════════════════════
+
+📚 REFERÊNCIAS RÁPIDAS
+
+  Preciso de ajuda com... .... Veja arquivo...
+  
+  Começar agora ..................... GUIA_RAPIDO.md
+  Integrar minha API ................ GUIA_INTEGRACAO.md
+  Como iniciar o sistema ............ COMO_INICIAR.md
+  Ver todos os arquivos ............. ARQUIVOS_CRIADOS.txt
+  Estrutura do projeto .............. ESTRUTURA_PROJETO.txt
+  Resolução de problemas ............ README.md (FAQ)
+  Exemplos de APIs .................. EXEMPLOS_INTEGRACAO.py
+  Status do projeto ................. STATUS_FINAL.txt
+  Interface web ..................... STREAMLIT_README.md
+
+═══════════════════════════════════════════════════════════════
+
+🎯 Os 3 Passos Mais Importantes
+
+  1️⃣  Duplo-clique: executar_streamlit.bat
+  
+  2️⃣  Edite arquivo: .env
+      └─ Configure: API_BASE_URL e API_KEY
+  
+  3️⃣  Adapte arquivo: api_rastreamento.py
+      └─ Métodos: consultar_por_nf()
+                  consultar_por_rastreamento()
+                  _processar_resposta_api()
+
+═══════════════════════════════════════════════════════════════
+
+⚡ ATALHOS ÚTEIS
+
+  🌐 Streamlit: http://localhost:8501
+  
+  📁 Excel: dados/rastreamento_modelo.xlsx
+  
+  💾 Backups: backups/ (automáticos!)
+  
+  📝 Logs: logs/ (debugging)
+
+═══════════════════════════════════════════════════════════════
+
+✅ TUDO PRONTO! COMEÇE AGORA!
+
+  Duplo-clique em: executar_streamlit.bat
+  
+═══════════════════════════════════════════════════════════════

@@ -1,0 +1,8 @@
+05/03/2026 21:18:17 - Rastreamento - INFO - ================================================================================
+05/03/2026 21:18:17 - Rastreamento - INFO - INICIANDO PROCESSAMENTO DE RASTREAMENTOS
+05/03/2026 21:18:17 - Rastreamento - INFO - ================================================================================
+05/03/2026 21:18:17 - Rastreamento - WARNING - Arquivo da planilha não encontrado; pulando backup
+05/03/2026 21:18:17 - Rastreamento - ERROR - Arquivo não encontrado: planilha_rastreamento.xlsx
+05/03/2026 21:18:17 - Rastreamento - WARNING - Planilha não encontrada, criando planilha modelo vazia
+05/03/2026 21:18:17 - Rastreamento - INFO - Planilha modelo criada: planilha_rastreamento.xlsx
+05/03/2026 21:18:17 - Rastreamento - INFO - Processamento interrompido: não havia dados para processar

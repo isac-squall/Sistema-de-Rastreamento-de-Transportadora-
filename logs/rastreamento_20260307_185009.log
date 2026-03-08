@@ -1,0 +1,3 @@
+07/03/2026 18:50:10 - Rastreamento - WARNING - Tentativa 1 falhou para AA123456789BR: 405 Client Error: Method Not Allowed for url: https://www.siterastreio.com.br/correios
+07/03/2026 18:50:10 - Rastreamento - WARNING - Tentativa 2 falhou para AA123456789BR: 405 Client Error: Method Not Allowed for url: https://www.siterastreio.com.br/correios
+07/03/2026 18:50:11 - Rastreamento - ERROR - Falha em todas as 3 tentativas para AA123456789BR: 405 Client Error: Method Not Allowed for url: https://www.siterastreio.com.br/correios

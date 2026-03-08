@@ -1,0 +1,82 @@
+05/03/2026 21:05:51 - Rastreamento - WARNING - API retornou status 404
+05/03/2026 21:05:54 - Rastreamento - WARNING - API retornou status 404
+05/03/2026 21:05:56 - Rastreamento - WARNING - API retornou status 404
+05/03/2026 21:05:57 - Rastreamento - WARNING - API retornou status 404
+05/03/2026 21:06:02 - Rastreamento - INFO - ================================================================================
+05/03/2026 21:06:02 - Rastreamento - INFO - INICIANDO PROCESSAMENTO DE RASTREAMENTOS
+05/03/2026 21:06:02 - Rastreamento - INFO - ================================================================================
+05/03/2026 21:06:02 - Rastreamento - ERROR - Falha ao criar backup: Arquivo não encontrado: planilha_rastreamento.xlsx
+05/03/2026 21:06:11 - Rastreamento - INFO - ================================================================================
+05/03/2026 21:06:11 - Rastreamento - INFO - INICIANDO PROCESSAMENTO DE RASTREAMENTOS
+05/03/2026 21:06:11 - Rastreamento - INFO - ================================================================================
+05/03/2026 21:06:11 - Rastreamento - ERROR - Falha ao criar backup: Arquivo não encontrado: planilha_rastreamento.xlsx
+05/03/2026 21:14:19 - Rastreamento - INFO - ================================================================================
+05/03/2026 21:14:19 - Rastreamento - INFO - INICIANDO PROCESSAMENTO DE RASTREAMENTOS
+05/03/2026 21:14:19 - Rastreamento - INFO - ================================================================================
+05/03/2026 21:14:19 - Rastreamento - ERROR - Falha ao criar backup: Arquivo não encontrado: planilha_rastreamento.xlsx
+05/03/2026 21:14:20 - Rastreamento - INFO - ================================================================================
+05/03/2026 21:14:20 - Rastreamento - INFO - INICIANDO PROCESSAMENTO DE RASTREAMENTOS
+05/03/2026 21:14:20 - Rastreamento - INFO - ================================================================================
+05/03/2026 21:14:20 - Rastreamento - ERROR - Falha ao criar backup: Arquivo não encontrado: planilha_rastreamento.xlsx
+05/03/2026 21:14:21 - Rastreamento - INFO - ================================================================================
+05/03/2026 21:14:21 - Rastreamento - INFO - INICIANDO PROCESSAMENTO DE RASTREAMENTOS
+05/03/2026 21:14:21 - Rastreamento - INFO - ================================================================================
+05/03/2026 21:14:21 - Rastreamento - ERROR - Falha ao criar backup: Arquivo não encontrado: planilha_rastreamento.xlsx
+05/03/2026 21:15:34 - Rastreamento - INFO - ================================================================================
+05/03/2026 21:15:34 - Rastreamento - INFO - INICIANDO PROCESSAMENTO DE RASTREAMENTOS
+05/03/2026 21:15:34 - Rastreamento - INFO - ================================================================================
+05/03/2026 21:15:34 - Rastreamento - ERROR - Falha ao criar backup: Arquivo não encontrado: planilha_rastreamento.xlsx
+05/03/2026 21:20:18 - Rastreamento - WARNING - API retornou status 404
+05/03/2026 21:20:24 - Rastreamento - WARNING - API retornou status 404
+05/03/2026 21:20:29 - Rastreamento - WARNING - API retornou status 404
+05/03/2026 21:20:33 - Rastreamento - WARNING - API retornou status 404
+05/03/2026 21:20:36 - Rastreamento - INFO - ================================================================================
+05/03/2026 21:20:36 - Rastreamento - INFO - INICIANDO PROCESSAMENTO DE RASTREAMENTOS
+05/03/2026 21:20:36 - Rastreamento - INFO - ================================================================================
+05/03/2026 21:20:36 - Rastreamento - INFO - Backup criado com sucesso: backups\planilha_rastreamento_backup_20260305_212036.xlsx
+05/03/2026 21:20:36 - Rastreamento - INFO - Backup criado com sucesso
+05/03/2026 21:20:36 - Rastreamento - INFO - Planilha carregada com sucesso: planilha_rastreamento.xlsx
+05/03/2026 21:20:36 - Rastreamento - INFO - Linhas: 3, Colunas: 5
+05/03/2026 21:20:37 - Rastreamento - WARNING - API retornou status 404
+05/03/2026 21:20:37 - Rastreamento - WARNING - Aviso: API retornou status 404
+05/03/2026 21:20:37 - Rastreamento - INFO - Total de registros para processar: 3
+05/03/2026 21:20:37 - Rastreamento - INFO - [1/3] Processando NF: , Rastreamento: 
+05/03/2026 21:20:37 - Rastreamento - WARNING -   ✗ Falha ao consultar NF: , Rastreamento: 
+05/03/2026 21:20:37 - Rastreamento - INFO - [2/3] Processando NF: , Rastreamento: 
+05/03/2026 21:20:37 - Rastreamento - WARNING -   ✗ Falha ao consultar NF: , Rastreamento: 
+05/03/2026 21:20:37 - Rastreamento - INFO - [3/3] Processando NF: , Rastreamento: 
+05/03/2026 21:20:37 - Rastreamento - WARNING -   ✗ Falha ao consultar NF: , Rastreamento: 
+05/03/2026 21:20:37 - Rastreamento - INFO - Planilha salva com sucesso: planilha_rastreamento.xlsx
+05/03/2026 21:20:37 - Rastreamento - INFO - 
+
+================================================================================
+                    RELATÓRIO DE ATUALIZAÇÃO DE RASTREAMENTOS
+================================================================================
+
+Data/Hora do Processamento: 05/03/2026 21:20:37
+
+ESTATÍSTICAS:
+  ✓ Total de registros processados: 3
+  ✓ Registros com sucesso: 0
+  ✓ Registros com mudança de status: 0
+  ✓ Registros com erro: 3
+  
+DISTRIBUIÇÃO DE STATUS:
+  • ⚠️ Erro na Busca: 3
+
+DETALHES DE ERROS:
+  - Total: 3
+  • Falha ao consultar NF: , Rastreamento: 
+  • Falha ao consultar NF: , Rastreamento: 
+  • Falha ao consultar NF: , Rastreamento: 
+
+================================================================================
+Arquivo salvo em: planilha_rastreamento.xlsx
+================================================================================
+
+05/03/2026 21:20:37 - Rastreamento - INFO - Relatório salvo em: relatorio_rastreamento_20260305_212037.txt
+05/03/2026 21:20:37 - Rastreamento - INFO - ================================================================================
+05/03/2026 21:20:37 - Rastreamento - INFO - PROCESSAMENTO CONCLUÍDO COM SUCESSO
+05/03/2026 21:20:37 - Rastreamento - INFO - ================================================================================
+05/03/2026 21:22:51 - Rastreamento - WARNING - API retornou status 404
+05/03/2026 21:27:03 - Rastreamento - WARNING - API retornou status 404

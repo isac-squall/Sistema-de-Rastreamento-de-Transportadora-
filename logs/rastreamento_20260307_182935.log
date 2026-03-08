@@ -1,0 +1,74 @@
+07/03/2026 18:29:36 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 18:29:51 - Rastreamento - INFO - ================================================================================
+07/03/2026 18:29:51 - Rastreamento - INFO - INICIANDO PROCESSAMENTO DE RASTREAMENTOS
+07/03/2026 18:29:51 - Rastreamento - INFO - ================================================================================
+07/03/2026 18:29:51 - Rastreamento - INFO - Backup criado com sucesso: backups\planilha_rastreamento_backup_20260307_182951.xlsx
+07/03/2026 18:29:51 - Rastreamento - INFO - Backup criado com sucesso
+07/03/2026 18:29:51 - Rastreamento - INFO - Planilha carregada com sucesso: planilha_rastreamento.xlsx
+07/03/2026 18:29:51 - Rastreamento - INFO - Linhas: 3, Colunas: 5
+07/03/2026 18:29:51 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 18:29:51 - Rastreamento - INFO - Total de registros para processar: 3
+07/03/2026 18:29:51 - Rastreamento - INFO - [1/3] Processando NF: , Rastreamento: 
+07/03/2026 18:29:51 - Rastreamento - WARNING -   ✗ Falha ao consultar NF: , Rastreamento: 
+07/03/2026 18:29:51 - Rastreamento - INFO - [2/3] Processando NF: , Rastreamento: 
+07/03/2026 18:29:51 - Rastreamento - WARNING -   ✗ Falha ao consultar NF: , Rastreamento: 
+07/03/2026 18:29:51 - Rastreamento - INFO - [3/3] Processando NF: , Rastreamento: 
+07/03/2026 18:29:51 - Rastreamento - WARNING -   ✗ Falha ao consultar NF: , Rastreamento: 
+07/03/2026 18:29:51 - Rastreamento - INFO - Planilha salva com sucesso: planilha_rastreamento.xlsx
+07/03/2026 18:29:51 - Rastreamento - INFO - 
+
+================================================================================
+                    RELATÓRIO DE ATUALIZAÇÃO DE RASTREAMENTOS
+================================================================================
+
+Data/Hora do Processamento: 07/03/2026 18:29:51
+
+ESTATÍSTICAS:
+  ✓ Total de registros processados: 3
+  ✓ Registros com sucesso: 0
+  ✓ Registros com mudança de status: 0
+  ✓ Registros com erro: 3
+  
+DISTRIBUIÇÃO DE STATUS:
+  • ⚠️ Erro na Busca: 3
+
+DETALHES DE ERROS:
+  - Total: 3
+  • Falha ao consultar NF: , Rastreamento: 
+  • Falha ao consultar NF: , Rastreamento: 
+  • Falha ao consultar NF: , Rastreamento: 
+
+================================================================================
+Arquivo salvo em: planilha_rastreamento.xlsx
+================================================================================
+
+07/03/2026 18:29:51 - Rastreamento - INFO - Relatório salvo em: relatorio_rastreamento_20260307_182951.txt
+07/03/2026 18:29:51 - Rastreamento - INFO - ================================================================================
+07/03/2026 18:29:51 - Rastreamento - INFO - PROCESSAMENTO CONCLUÍDO COM SUCESSO
+07/03/2026 18:29:51 - Rastreamento - INFO - ================================================================================
+07/03/2026 18:31:01 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 18:31:04 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 18:31:07 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 18:31:12 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 18:41:49 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 18:43:05 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 18:48:42 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 18:48:48 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 18:48:54 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 18:49:02 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 18:49:05 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 18:49:29 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 18:49:55 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 18:49:56 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 18:50:04 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 18:50:05 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 18:50:12 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 18:50:20 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 18:50:21 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 18:50:29 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 18:50:37 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 18:50:40 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 18:51:48 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 18:51:51 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 18:53:32 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 18:53:42 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/

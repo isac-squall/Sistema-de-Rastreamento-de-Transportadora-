@@ -1,0 +1,218 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║     AMBIENTE VIRTUAL E DEPENDÊNCIAS - INSTALAÇÃO COMPLETA ✅                 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+
+✅ RESUMO DA INSTALAÇÃO
+═══════════════════════════════════════════════════════════════════════════════
+
+Ambiente Virtual: ✅ CRIADO
+Localização: c:\Users\Windows\Desktop\Automação.Transportadora\venv
+
+Bibliotecas Instaladas: ✅ 42 pacotes
+Python: 3.13.11
+Pip: 25.3
+
+
+📦 BIBLIOTECAS PRINCIPAIS INSTALADAS
+═══════════════════════════════════════════════════════════════════════════════
+
+✓ requests (2.32.5)           - Requisições HTTP
+✓ pandas (2.3.3)              - Processamento de dados
+✓ openpyxl (3.1.5)            - Manipulação Excel
+✓ python-dotenv (1.2.2)       - Variáveis de ambiente
+✓ streamlit (1.55.0)          - Interface web
+✓ numpy (2.4.2)               - Computação numérica
+✓ pyarrow (23.0.1)            - Formats de dados
+✓ pillow (12.1.1)             - Processamento de imagens
+
+
+🌐 INICIAR STREAMLIT
+═══════════════════════════════════════════════════════════════════════════════
+
+OPÇÃO 1: Clique duplo (Recomendado para Windows)
+────────────────────────────────────────────────
+1. Navegue até: c:\Users\Windows\Desktop\Automação.Transportadora
+2. Duplo clique em: executar_streamlit.bat
+3. A aplicação abrirá automaticamente em http://localhost:8501
+
+
+OPÇÃO 2: Linha de comando
+─────────────────────────
+
+1. Abra PowerShell
+2. Navegue até o projeto:
+   cd c:\Users\Windows\Desktop\Automação.Transportadora
+
+3. Ative o ambiente virtual:
+   .\venv\Scripts\activate
+
+4. Execute Streamlit:
+   streamlit run app.py
+
+5. Acesse no navegador:
+   http://localhost:8501
+
+
+OPÇÃO 3: Python direto
+──────────────────────
+
+python -m streamlit run app.py
+
+
+🎯 ACESSAR A APLICAÇÃO
+═══════════════════════════════════════════════════════════════════════════════
+
+URL de Acesso:
+http://localhost:8501
+
+A aplicação abrirá em seu navegador padrão automaticamente.
+
+
+📊 ESTRUTURA DE PASTAS
+═══════════════════════════════════════════════════════════════════════════════
+
+Automação.Transportadora/
+├── venv/                           # Ambiente Virtual (CRIADO)
+│   ├── Scripts/
+│   │   ├── python.exe
+│   │   ├── pip.exe
+│   │   └── activate.bat
+│   └── Lib/
+│       └── site-packages/          # Pacotes instalados
+├── app.py                          # Aplicação Streamlit
+├── executar_streamlit.bat          # Script para iniciar
+├── .streamlit/
+│   └── config.toml                # Config do Streamlit
+└── [outros arquivos do projeto]
+
+
+🔧 COMANDOS DE GERENCIAMENTO
+═══════════════════════════════════════════════════════════════════════════════
+
+Ativar ambiente virtual:
+  .\venv\Scripts\activate
+
+Desativar ambiente virtual:
+  deactivate
+
+Ver pacotes instalados:
+  .\venv\Scripts\pip list
+
+Atualizar pip:
+  .\venv\Scripts\python -m pip install --upgrade pip
+
+Instalar novo pacote:
+  .\venv\Scripts\pip install nome_do_pacote
+
+Congelar dependências:
+  .\venv\Scripts\pip freeze > requirements_completo.txt
+
+
+🌐 FUNCIONALIDADES DA INTERFACE STREAMLIT
+═══════════════════════════════════════════════════════════════════════════════
+
+🏠 Início
+  - Bem-vindo e status do sistema
+  - Acesso rápido às funções
+
+⚙️ Processar Rastreamentos
+  - Processar dados de rastreamento
+  - Visualizar progresso em tempo real
+  - Gerar relatórios
+
+📊 Visualizar Dados
+  - Ver planilha de rastreamento
+  - Filtrar por status
+  - Baixar como CSV
+
+💾 Backup e Restauração
+  - Listar backups disponíveis
+  - Restaurar versão anterior
+  - Gerenciar backups
+
+📈 Relatórios
+  - Visualizar logs
+  - Estatísticas gerais
+
+ℹ️ Sobre
+  - Informações do projeto
+  - Documentação
+
+
+💡 DICAS IMPORTANTES
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Sempre use o ambiente virtual
+   - Windows: .\venv\Scripts\activate
+   - Linux/Mac: source venv/bin/activate
+
+2. Configure .env antes de usar
+   - Edite com sua URL de API
+   - Adicione sua chave de API
+
+3. Crie planilha modelo primeiro
+   - Use: python cli.py criar-modelo
+
+4. Verifique logs em caso de erro
+   - Logs salvos em: logs/
+
+5. Backups são automáticos
+   - Salvos em: backups/
+
+
+⚠️ TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════════════════════
+
+Problema: "Porta 8501 já em uso"
+Solução: streamlit run app.py --server.port 8502
+
+Problema: Streamlit não inicia
+Solução: Ative o ambiente virtual primeiro
+
+Problema: Módulos não encontrados
+Solução: pip install -r requirements.txt
+
+Problema: Cache do Streamlit
+Solução: streamlit cache clear
+
+
+📚 DOCUMENTAÇÃO
+═══════════════════════════════════════════════════════════════════════════════
+
+Guia Principal: README.md
+Guia Rápido: GUIA_RAPIDO.md
+Integração: GUIA_INTEGRACAO.md
+Streamlit: STREAMLIT_README.md
+
+
+✨ PRÓXIMOS PASSOS
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Execute Streamlit:
+   executar_streamlit.bat
+
+2. Acesse: http://localhost:8501
+
+3. Configure sua API em .env
+
+4. Crie planilha modelo
+
+5. Processe seus rastreamentos!
+
+
+🎉 TUDO PRONTO!
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ Ambiente Virtual: CRIADO
+✅ Dependências: INSTALADAS
+✅ Interface Streamlit: PRONTA
+✅ Configuração: COMPLETA
+
+Seu sistema está 100% pronto para usar!
+
+
+═══════════════════════════════════════════════════════════════════════════════
+Data: 4 de março de 2026
+Status: ✅ Operacional
+═══════════════════════════════════════════════════════════════════════════════

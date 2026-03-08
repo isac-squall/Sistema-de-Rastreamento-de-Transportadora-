@@ -1,0 +1,303 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║           INICIAR STREAMLIT - GUIA PASSO A PASSO (WINDOWS)                   ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+
+🚀 3 FORMAS DE INICIAR A INTERFACE WEB
+═══════════════════════════════════════════════════════════════════════════════
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ OPÇÃO 1: DUPLO CLIQUE (⭐ RECOMENDADA - MAIS FÁCIL)                          │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+PASSO 1: Encontre o arquivo
+   📁 Abra: c:\Users\Windows\Desktop\Automação.Transportadora
+           (ou abra Explorer e navegue até a pasta)
+
+PASSO 2: Localize o arquivo
+   📄 Procure por: executar_streamlit.bat
+
+PASSO 3: Execute
+   🖱️ Duplo clique no arquivo: executar_streamlit.bat
+      (ou clique direito → Abrir)
+
+RESULTADO ESPERADO:
+   ✅ Uma janela aparecerá
+   ✅ Seu navegador abrirá em: http://localhost:8501
+   ✅ Interface web loaded!
+
+Para encerrar:
+   ❌ Feche a janela ou pressione CTRL+C
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ OPÇÃO 2: POWERSHELL (MANUAL)                                                 │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+PASSO 1: Abra PowerShell
+   🪟 Clique no ícone Windows ou pressione: Windows+X
+   📋 Selecione: Windows PowerShell
+
+PASSO 2: Navegue até o projeto
+   📁 Digite e pressione ENTER:
+      cd c:\Users\Windows\Desktop\Automação.Transportadora
+
+PASSO 3: Ative o ambiente virtual
+   🔧 Digite e pressione ENTER:
+      .\venv\Scripts\activate
+   
+   ✅ Você verá: (venv) C:\Users\Windows\Desktop\Automação.Transportadora>
+
+PASSO 4: Inicie Streamlit
+   🚀 Digite e pressione ENTER:
+      streamlit run app.py
+
+RESULTADO ESPERADO:
+   ✅ Verá várias linhas de output
+   ✅ Seu navegador abrirá automaticamente
+   ✅ Interface web loaded!
+
+Para encerrar:
+   ❌ Pressione CTRL+C na janela PowerShell
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ OPÇÃO 3: PYTHON DIRETO (ALTERNATIVA)                                         │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+PASSO 1: Abra PowerShell
+   🪟 Como na Opção 2
+
+PASSO 2: Navegue até o projeto
+   cd c:\Users\Windows\Desktop\Automação.Transportadora
+
+PASSO 3: Execute Python
+   python -m streamlit run app.py
+
+RESULTADO ESPERADO:
+   ✅ Mesmo resultado da Opção 2
+
+
+🌐 APÓS INICIAR - O QUE VOCÊ VERÁ
+═══════════════════════════════════════════════════════════════════════════════
+
+NAVEGADOR AUTOMATICAMENTE ABRIRÁ EM:
+   URL: http://localhost:8501
+
+INTERFACE COMPLETA COM:
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ SIDEBAR (ESQUERDA)                                                  │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  📋 Menu Principal                                                  │
+│  ├─ 🏠 Início                                                      │
+│  ├─ ⚙️ Processar Rastreamentos                                      │
+│  ├─ 📊 Visualizar Dados                                             │
+│  ├─ 💾 Backup e Restauração                                        │
+│  ├─ 📈 Relatórios                                                  │
+│  └─ ℹ️ Sobre                                                       │
+│                                                                     │
+│  💡 Dica: Use o menu acima para navegar                            │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+
+MAIN AREA (CENTRO - DIREITA)
+   Conteúdo da página selecionada
+   Botões, formulários, tabelas, gráficos
+
+
+📱 INTERFACE - 5 SEÇÕES PRINCIPAIS
+═══════════════════════════════════════════════════════════════════════════════
+
+Clique em cada uma no menu:
+
+🏠 INÍCIO
+   └─ Dashboard com status do sistema
+   └─ Bem-vindo
+   └─ Links rápidos
+
+⚙️ PROCESSAR RASTREAMENTOS
+   └─ Opções de processamento
+   └─ Progresso em tempo real
+   └─ Estatísticas e gráficos
+
+📊 VISUALIZAR DADOS
+   └─ Ver planilha Excel
+   └─ Filtrar dados
+   └─ Baixar como CSV
+
+💾 BACKUP E RESTAURAÇÃO
+   └─ Listar backups
+   └─ Restaurar versão anterior
+   └─ Gerenciar backups
+
+📈 RELATÓRIOS
+   └─ Ver logs
+   └─ Estatísticas
+
+
+🎯 PRIMEIRO ACESSO - O QUE FAZER
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Página INÍCIO
+   ├─ Leia o bem-vindo
+   ├─ Verifique status do sistema
+   └─ Clique nos botões para explorar
+
+2. Configure sua API
+   ├─ Edite: .env
+   ├─ Configure: API_BASE_URL
+   └─ Configure: API_KEY
+
+3. Visualizar Dados
+   ├─ Clique: "Criar Modelo"
+   └─ Isso cria a planilha
+
+4. Processar Rastreamentos
+   ├─ Clique: "Iniciar Processamento"
+   └─ Aguarde completar
+
+5. Veja Resultados
+   ├─ Volta a: Visualizar Dados
+   └─ Veja sua planilha atualizada
+
+
+💻 SISTEMA DE ABAS DO NAVEGADOR
+═══════════════════════════════════════════════════════════════════════════════
+
+Seu navegador abrirá uma aba com:
+
+┌──────────────────────────────────────────────────────┐
+│ 🔙 🔜  Local   🚚 Rastreamento de Transportadora  🔄 │
+├──────────────────────────────────────────────────────┤
+│ http://localhost:8501                                │
+└──────────────────────────────────────────────────────┘
+
+Se não abrir automaticamente:
+   1. Copie: http://localhost:8501
+   2. Cole na barra de endereço
+   3. Pressione ENTER
+
+
+⚡ ATALHOS ÚTEIS
+═══════════════════════════════════════════════════════════════════════════════
+
+Atualizar página:       F5 ou CTRL+R
+Voltar:                 ALT+← ou browser back
+Abrir dev tools:        F12
+Tela cheia:             F11
+Streamlit menu:         ☰ (canto superior direito)
+
+
+🔧 COMANDOS DE CONTROLE
+═══════════════════════════════════════════════════════════════════════════════
+
+ENQUANTO STREAMLIT ESTÁ RODANDO:
+
+Parar servidor:
+   Pressione: CTRL+C
+
+Recarregar automático:
+   Arquivo salvo = atualiza automaticamente
+
+Limpar cache:
+   Na aba Streamlit (☰) → Clear cache
+
+
+🌐 ENDEREÇOS IMPORTANTES
+═══════════════════════════════════════════════════════════════════════════════
+
+Aplicação Web:
+   http://localhost:8501
+
+API Interna:
+   http://localhost:8501/api (não acesse direto)
+
+Arquivos do projeto:
+   c:\Users\Windows\Desktop\Automação.Transportadora
+
+
+📊 ESTRUTURA DO PROJETO VISÍVEL
+═══════════════════════════════════════════════════════════════════════════════
+
+Depois de usar, você terá:
+
+Automação.Transportadora/
+├── app.py           ← Interface web (já existe)
+├── venv/            ← Ambiente virtual (já existe)
+├── backups/         ← 📁 Criado após 1º backup
+│   └── *.xlsx       ← Backups automáticos
+├── logs/            ← 📁 Criado após 1º processamento
+│   └── *.log        ← Logs de operações
+├── planilha_rastreamento.xlsx ← Criado ao rodar
+└── [arquivos de projeto]
+
+
+⚠️ TROUBLESHOOTING - SE NÃO FUNCIONAR
+═══════════════════════════════════════════════════════════════════════════════
+
+PROBLEMA: Porta 8501 já em uso
+SOLUÇÃO:  streamlit run app.py --server.port 8502
+          Acesse: http://localhost:8502
+
+PROBLEMA: "ModuleNotFoundError" ao executar
+SOLUÇÃO:  Certifique-se que venv está ativado
+          .\venv\Scripts\activate
+
+PROBLEMA: Não abre navegador automaticamente
+SOLUÇÃO:  Abra manualmente: http://localhost:8501
+
+PROBLEMA: Interface não carrega
+SOLUÇÃO:  Recarregue a página: F5
+          Ou feche e reabra: http://localhost:8501
+
+PROBLEMA: "Streamlit not found"
+SOLUÇÃO:  Instale: pip install streamlit
+          Ou ative venv: .\venv\Scripts\activate
+
+PROBLEMA: Aplicação congelada
+SOLUÇÃO:  Feche navegador
+          Pressione CTRL+C no PowerShell
+          Reinicie: streamlit run app.py
+
+
+✨ DICAS DE USO
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Deixe o PowerShell aberto enquanto usa
+   (ele mostra logs em tempo real)
+
+2. Monitorar logs:
+   Qualquer erro aparecerá no PowerShell
+
+3. Primeira execução é lenta:
+   Normal - Streamlit compila na primeira vez
+
+4. Feche completamente o navegador:
+   Se tiver problema, feche e clique no link novamente
+
+5. Mantenha .env seguro:
+   Não compartilhe (tem suas chaves)
+
+
+🎉 PRONTO PARA COMEÇAR!
+═══════════════════════════════════════════════════════════════════════════════
+
+COMECE AGORA:
+
+👉 OPÇÃO 1 (Fácil):
+   Duplo clique em: executar_streamlit.bat
+
+👉 OPÇÃO 2 (Manual):
+   .\venv\Scripts\activate
+   streamlit run app.py
+
+RESULTADO:
+   🌐 http://localhost:8501 abre automaticamente
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                    COMECE AGORA - BOA SORTE! 🚀
+═══════════════════════════════════════════════════════════════════════════════

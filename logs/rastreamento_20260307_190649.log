@@ -1,0 +1,101 @@
+07/03/2026 19:06:49 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 19:07:25 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 19:07:31 - Rastreamento - INFO - ================================================================================
+07/03/2026 19:07:31 - Rastreamento - INFO - INICIANDO PROCESSAMENTO DE RASTREAMENTOS
+07/03/2026 19:07:31 - Rastreamento - INFO - ================================================================================
+07/03/2026 19:07:31 - Rastreamento - INFO - Backup criado com sucesso: backups\planilha_rastreamento_backup_20260307_190731.xlsx
+07/03/2026 19:07:31 - Rastreamento - INFO - Backup criado com sucesso
+07/03/2026 19:07:31 - Rastreamento - INFO - Planilha carregada com sucesso: planilha_rastreamento.xlsx
+07/03/2026 19:07:31 - Rastreamento - INFO - Linhas: 3, Colunas: 5
+07/03/2026 19:07:31 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 19:07:31 - Rastreamento - INFO - Total de registros para processar: 3
+07/03/2026 19:07:31 - Rastreamento - INFO - [1/3] Processando NF: , Rastreamento: 
+07/03/2026 19:07:31 - Rastreamento - WARNING -   ✗ Falha ao consultar NF: , Rastreamento: 
+07/03/2026 19:07:31 - Rastreamento - INFO - [2/3] Processando NF: , Rastreamento: 
+07/03/2026 19:07:31 - Rastreamento - WARNING -   ✗ Falha ao consultar NF: , Rastreamento: 
+07/03/2026 19:07:31 - Rastreamento - INFO - [3/3] Processando NF: , Rastreamento: 
+07/03/2026 19:07:31 - Rastreamento - WARNING -   ✗ Falha ao consultar NF: , Rastreamento: 
+07/03/2026 19:07:31 - Rastreamento - INFO - Planilha salva com sucesso: planilha_rastreamento.xlsx
+07/03/2026 19:07:31 - Rastreamento - INFO - 
+
+================================================================================
+                    RELATÓRIO DE ATUALIZAÇÃO DE RASTREAMENTOS
+================================================================================
+
+Data/Hora do Processamento: 07/03/2026 19:07:31
+
+ESTATÍSTICAS:
+  ✓ Total de registros processados: 3
+  ✓ Registros com sucesso: 0
+  ✓ Registros com mudança de status: 0
+  ✓ Registros com erro: 3
+  
+DISTRIBUIÇÃO DE STATUS:
+  • ⚠️ Erro na Busca: 3
+
+DETALHES DE ERROS:
+  - Total: 3
+  • Falha ao consultar NF: , Rastreamento: 
+  • Falha ao consultar NF: , Rastreamento: 
+  • Falha ao consultar NF: , Rastreamento: 
+
+================================================================================
+Arquivo salvo em: planilha_rastreamento.xlsx
+================================================================================
+
+07/03/2026 19:07:31 - Rastreamento - INFO - Relatório salvo em: relatorio_rastreamento_20260307_190731.txt
+07/03/2026 19:07:31 - Rastreamento - INFO - ================================================================================
+07/03/2026 19:07:31 - Rastreamento - INFO - PROCESSAMENTO CONCLUÍDO COM SUCESSO
+07/03/2026 19:07:31 - Rastreamento - INFO - ================================================================================
+07/03/2026 19:11:55 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 19:12:03 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 19:13:27 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 19:16:37 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 19:17:17 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 19:17:55 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 19:19:27 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 19:20:42 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 19:21:32 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 19:22:30 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 19:23:01 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 19:27:17 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 19:27:53 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 19:29:16 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 19:29:19 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 19:29:21 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 19:29:24 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 19:30:09 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 19:30:13 - Rastreamento - INFO - API configurada - verifique créditos no painel https://labs.wonca.com.br/
+07/03/2026 19:30:26 - Rastreamento - INFO - ================================================================================
+07/03/2026 19:30:26 - Rastreamento - INFO - INICIANDO PROCESSAMENTO DE RASTREAMENTOS
+07/03/2026 19:30:26 - Rastreamento - INFO - ================================================================================
+07/03/2026 19:30:26 - Rastreamento - INFO - Backup criado com sucesso: backups\planilha_rastreamento_backup_20260307_193026.xlsx
+07/03/2026 19:30:26 - Rastreamento - INFO - Backup criado com sucesso
+07/03/2026 19:30:33 - Rastreamento - INFO - Planilha carregada com sucesso: planilha_rastreamento.xlsx
+07/03/2026 19:30:33 - Rastreamento - INFO - Linhas: 16, Colunas: 23
+07/03/2026 19:30:33 - Rastreamento - ERROR - Colunas obrigatórias faltando: ['NF', 'Rastreamento', 'Status']
+07/03/2026 19:30:33 - Rastreamento - INFO - Colunas esperadas: ['NF', 'Rastreamento', 'Status']
+07/03/2026 19:30:33 - Rastreamento - INFO - Colunas disponíveis: ['Third Code', 'Name I', 'MIC', 'Master MIC', 'VAT Number', 'RAZÃO SOCIAL', 'ENDEREÇO', 'CEP', 'Estado', 'Cidade', 'Club date', 'Locally by', 'Contato', 'Cargo', 'Telefone', 'E-mail', 'NEW MANAGER', 'DIA DE INPUT', 'DIA EXPEDIÇÃO', 'CONTATO PARA ENTREGA', 'RESTRIÇÕES', 'Prazo Fracionado', 'Unnamed: 22']
+07/03/2026 19:30:33 - Rastreamento - ERROR - Planilha não possui colunas obrigatórias
+07/03/2026 19:30:57 - Rastreamento - INFO - ================================================================================
+07/03/2026 19:30:57 - Rastreamento - INFO - INICIANDO PROCESSAMENTO DE RASTREAMENTOS
+07/03/2026 19:30:57 - Rastreamento - INFO - ================================================================================
+07/03/2026 19:30:57 - Rastreamento - INFO - Backup criado com sucesso: backups\planilha_rastreamento_backup_20260307_193057.xlsx
+07/03/2026 19:30:57 - Rastreamento - INFO - Backup criado com sucesso
+07/03/2026 19:31:05 - Rastreamento - INFO - Planilha carregada com sucesso: planilha_rastreamento.xlsx
+07/03/2026 19:31:05 - Rastreamento - INFO - Linhas: 16, Colunas: 23
+07/03/2026 19:31:05 - Rastreamento - ERROR - Colunas obrigatórias faltando: ['NF', 'Rastreamento', 'Status']
+07/03/2026 19:31:05 - Rastreamento - INFO - Colunas esperadas: ['NF', 'Rastreamento', 'Status']
+07/03/2026 19:31:05 - Rastreamento - INFO - Colunas disponíveis: ['Third Code', 'Name I', 'MIC', 'Master MIC', 'VAT Number', 'RAZÃO SOCIAL', 'ENDEREÇO', 'CEP', 'Estado', 'Cidade', 'Club date', 'Locally by', 'Contato', 'Cargo', 'Telefone', 'E-mail', 'NEW MANAGER', 'DIA DE INPUT', 'DIA EXPEDIÇÃO', 'CONTATO PARA ENTREGA', 'RESTRIÇÕES', 'Prazo Fracionado', 'Unnamed: 22']
+07/03/2026 19:31:05 - Rastreamento - ERROR - Planilha não possui colunas obrigatórias
+07/03/2026 19:33:24 - Rastreamento - INFO - ================================================================================
+07/03/2026 19:33:24 - Rastreamento - INFO - INICIANDO PROCESSAMENTO DE RASTREAMENTOS
+07/03/2026 19:33:24 - Rastreamento - INFO - ================================================================================
+07/03/2026 19:33:24 - Rastreamento - INFO - Backup criado com sucesso: backups\planilha_rastreamento_backup_20260307_193324.xlsx
+07/03/2026 19:33:24 - Rastreamento - INFO - Backup criado com sucesso
+07/03/2026 19:33:31 - Rastreamento - INFO - Planilha carregada com sucesso: planilha_rastreamento.xlsx
+07/03/2026 19:33:31 - Rastreamento - INFO - Linhas: 16, Colunas: 23
+07/03/2026 19:33:31 - Rastreamento - ERROR - Colunas obrigatórias faltando: ['NF', 'Rastreamento', 'Status']
+07/03/2026 19:33:31 - Rastreamento - INFO - Colunas esperadas: ['NF', 'Rastreamento', 'Status']
+07/03/2026 19:33:31 - Rastreamento - INFO - Colunas disponíveis: ['Third Code', 'Name I', 'MIC', 'Master MIC', 'VAT Number', 'RAZÃO SOCIAL', 'ENDEREÇO', 'CEP', 'Estado', 'Cidade', 'Club date', 'Locally by', 'Contato', 'Cargo', 'Telefone', 'E-mail', 'NEW MANAGER', 'DIA DE INPUT', 'DIA EXPEDIÇÃO', 'CONTATO PARA ENTREGA', 'RESTRIÇÕES', 'Prazo Fracionado', 'Unnamed: 22']
+07/03/2026 19:33:31 - Rastreamento - ERROR - Planilha não possui colunas obrigatórias

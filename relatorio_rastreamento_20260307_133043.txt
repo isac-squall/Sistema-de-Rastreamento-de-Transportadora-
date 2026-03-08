@@ -1,0 +1,25 @@
+
+================================================================================
+                    RELATÓRIO DE ATUALIZAÇÃO DE RASTREAMENTOS
+================================================================================
+
+Data/Hora do Processamento: 07/03/2026 13:30:43
+
+ESTATÍSTICAS:
+  ✓ Total de registros processados: 3
+  ✓ Registros com sucesso: 0
+  ✓ Registros com mudança de status: 0
+  ✓ Registros com erro: 3
+  
+DISTRIBUIÇÃO DE STATUS:
+  • ⚠️ Erro na Busca: 3
+
+DETALHES DE ERROS:
+  - Total: 3
+  • Falha ao consultar NF: , Rastreamento: 
+  • Falha ao consultar NF: , Rastreamento: 
+  • Falha ao consultar NF: , Rastreamento: 
+
+================================================================================
+Arquivo salvo em: planilha_rastreamento.xlsx
+================================================================================
