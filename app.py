@@ -4,6 +4,11 @@ Execute com: streamlit run app.py
 """
 
 import os
+import streamlit as st
+import pandas as pd
+from datetime import datetime
+from typing import Dict, List, Any, cast
+import glob
 
 # prepare streamlit configuration for headless/cloud environments
 # avoid first-run email prompt by creating credentials file in home dir
@@ -19,6 +24,11 @@ if not os.path.exists(cred_file):
 
 # force headless (cloud) mode
 os.environ.setdefault("STREAMLIT_SERVER_HEADLESS", "true")
+
+# Importar módulos do projeto
+from main import OrquestradorRastreamento
+from utils import BackupManager
+from config import EXCEL_FILE_PATH
 
 import streamlit as st
 import pandas as pd
