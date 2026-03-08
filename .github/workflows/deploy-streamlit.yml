@@ -1,0 +1,32 @@
+name: Deploy Streamlit
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Deploy to Streamlit Community Cloud
+        uses: streamlit/action@v1
+        with:
+          # branch and repo are optional; they default to the workflow's repo
+          # branch: main
+          # repo: ${{ github.repository }}
+          directory: .

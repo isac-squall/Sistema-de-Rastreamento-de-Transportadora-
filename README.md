@@ -71,6 +71,36 @@ copy .env.example .env
 # Edite o arquivo .env com suas configurações
 ```
 
+## 💻 Git & Deploy Automático
+
+O repositório já conta com utilitários para automatizar o fluxo de atualização e
+implantação da aplicação Streamlit. Existem duas opções:
+
+1. **Script PowerShell local** (`auto_deploy.ps1`):
+   - Executa `git add .`, `git commit`, `git pull` e `git push` na branch `main`.
+   - Aceita o parâmetro `-CommitMessage` para customizar a mensagem de commit e o
+     switch `-RunLocalStreamlit` para iniciar o servidor local após o push.
+   - Exemplo:
+     ```powershell
+     # apenas sincroniza com o remoto
+     .\auto_deploy.ps1 -CommitMessage "Atualiza rastreamento"
+
+     # sincroniza e abre o app local
+     .\auto_deploy.ps1 -RunLocalStreamlit
+     ```
+
+2. **Workflow GitHub Actions** (`.github/workflows/deploy-streamlit.yml`):
+   - Dispara automaticamente a cada `push` na branch `main`.
+   - Faz checkout do código, instala dependências e usa o [action oficial do
+     Streamlit](https://github.com/streamlit/action) para redeploy na Streamlit
+     Community Cloud.
+   - Basta ter seu app conectado ao repo; o deploy acontece sem intervenção.
+
+> 💡 o deploy local (`-RunLocalStreamlit`) ignora configurações de nuvem, é útil
+> para desenvolvimento. A ação do GitHub garante que a versão pública esteja
+> atualizada automaticamente sempre que você fizer `git push`.
+
+
 ## ⚙️ Configuração
 
 ### Arquivo `.env`
