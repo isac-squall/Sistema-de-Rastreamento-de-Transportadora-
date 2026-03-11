@@ -28,18 +28,7 @@ os.environ.setdefault("STREAMLIT_SERVER_HEADLESS", "true")
 # Importar módulos do projeto
 from main import OrquestradorRastreamento
 from utils import BackupManager
-from config import EXCEL_FILE_PATH
-
-import streamlit as st
-import pandas as pd
-import os
-from datetime import datetime
-from typing import Dict, List, Any, cast
-
-# Importar módulos do projeto
-from main import OrquestradorRastreamento
-from utils import BackupManager
-from config import EXCEL_FILE_PATH
+from config import EXCEL_FILE_PATH, COLUNA_RASTREAMENTO
 
 # helper to show logs
 import glob
@@ -154,6 +143,14 @@ if opcao == "🏠 Início":
         - 📊 Visualizar dados e relatórios
         - 🔄 Restaurar versões anteriores
         """ )
+        # campo para inserir código manualmente
+        codigo_manual = st.text_area(
+            "✏️ Insira códigos de rastreamento (um por linha)",
+            help="Digite ou cole os códigos dos Correios aqui em vez de carregar uma planilha",
+            height=100
+        )
+        if codigo_manual:
+            st.session_state['codigos_manua'] = codigo_manual.splitlines()
         # upload também na página inicial
         uploaded_start = st.file_uploader(
             "📁 Carregar planilha de rastreamento (XLSX)", type=["xlsx"]
@@ -257,6 +254,21 @@ elif opcao == "⚙️ Processar Rastreamentos":
     if st.button("🚀 Iniciar Processamento", use_container_width=True, type="primary"):
         with st.spinner("⏳ Processando rastreamentos..."):
             try:
+                # Se o usuário inseriu códigos manualmente, gera um Excel temporário
+                if st.session_state.get('codigos_manua'):
+                    codigos = st.session_state.get('codigos_manua')
+                    # montar DataFrame básico com apenas coluna de rastreamento
+                    # usa o nome da coluna definido em config para permitir customização
+                    df_temp = pd.DataFrame({
+                        COLUNA_RASTREAMENTO: codigos
+                    })
+                    try:
+                        df_temp.to_excel(EXCEL_FILE_PATH, index=False)
+                        st.info(f"📝 Planilha gerada com {len(codigos)} códigos manuais.")
+                    except Exception as e:
+                        st.error(f"Falha ao salvar planilha manual: {e}")
+                        raise
+
                 orquestrador = OrquestradorRastreamento()
                 sucesso = orquestrador.processar_rastreamentos(criar_backup=criar_backup)
                 
