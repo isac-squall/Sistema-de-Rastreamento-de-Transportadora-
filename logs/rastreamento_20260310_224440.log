@@ -1,0 +1,3 @@
+10/03/2026 22:44:40 - Rastreamento - WARNING - Tentativa 1 falhou para AM947285279BR: 503 Server Error: Service Unavailable for url: https://api.correios.com.br/rastreamento/v1/objetos/AM947285279BR
+10/03/2026 22:44:40 - Rastreamento - WARNING - Tentativa 2 falhou para AM947285279BR: 503 Server Error: Service Unavailable for url: https://api.correios.com.br/rastreamento/v1/objetos/AM947285279BR
+10/03/2026 22:44:40 - Rastreamento - ERROR - Falha em todas as 3 tentativas para AM947285279BR: 503 Server Error: Service Unavailable for url: https://api.correios.com.br/rastreamento/v1/objetos/AM947285279BR

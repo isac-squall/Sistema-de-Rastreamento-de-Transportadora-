@@ -10,10 +10,11 @@ load_dotenv()
 
 # ============== CONFIGURAÇÃO DA API ==============
 # URL base padronizada para quem utiliza siterastreio.com.br/correios
-API_BASE_URL = "https://www.siterastreio.com.br/api-correios"  # Adapte conforme sua API
+API_BASE_URL = os.getenv('API_BASE_URL', "https://www.siterastreio.com.br/api-correios")  # Adapte conforme sua API
 API_TIMEOUT = int(os.getenv('API_TIMEOUT', 30))  # Timeout em segundos
 API_RETRIES = int(os.getenv('API_RETRIES', 3))  # Número de tentativas
 API_KEY = os.getenv('API_KEY', '')  # Chave da API (opcional)
+API_USER = os.getenv('API_USER', '')  # Usuário da API (opcional)
 
 # ============== CONFIGURAÇÃO DE RATE LIMITING ==============
 RATE_LIMIT_REQUESTS = int(os.getenv('RATE_LIMIT_REQUESTS', 100))  # Requisições por período

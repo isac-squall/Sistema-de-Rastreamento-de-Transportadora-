@@ -151,6 +151,67 @@ if opcao == "🏠 Início":
         )
         if codigo_manual:
             st.session_state['codigos_manua'] = codigo_manual.splitlines()
+        
+        # Campo de busca individual
+        st.markdown("---")
+        st.subheader("🔍 Rastrear Produto Individual")
+        codigo_busca = st.text_input(
+            "Digite o código de rastreamento:",
+            help="Insira um código de rastreamento para consultar o status em tempo real"
+        )
+        if st.button("🔍 Buscar", key="buscar_individual"):
+            if codigo_busca.strip():
+                with st.spinner("⏳ Consultando rastreamento..."):
+                    try:
+                        from api_rastreamento import ConsultadorAPI
+                        api = ConsultadorAPI()
+                        resultado = api.consultar_por_rastreamento(codigo_busca.strip())
+                        
+                        if resultado:
+                            st.success(f"✅ Rastreamento encontrado para: {codigo_busca}")
+                            
+                            col1, col2 = st.columns(2)
+                            with col1:
+                                st.metric("Status", resultado.get('status_amigavel', 'N/A'))
+                            with col2:
+                                st.metric("Última Atualização", resultado.get('data_atualizacao', 'N/A'))
+                            
+                            st.write(f"**Localização:** {resultado.get('localizacao', 'N/A')}")
+                            
+                            if resultado.get('historico'):
+                                st.subheader("📋 Histórico")
+                                for evento in resultado['historico']:
+                                    st.write(f"• {evento['data']} - {evento['local']}: {evento['descricao']}")
+                        else:
+                            # Fallback para modo teste se API falhar
+                            st.warning("⚠️ API real não disponível. Mostrando dados simulados para demonstração.")
+                            api_teste = ConsultadorAPI(modo_teste=True)
+                            resultado = api_teste.consultar_por_rastreamento(codigo_busca.strip())
+                            
+                            if resultado:
+                                st.info("📊 Dados Simulados (para demonstração)")
+                                
+                                col1, col2 = st.columns(2)
+                                with col1:
+                                    st.metric("Status", resultado.get('status_amigavel', 'N/A'))
+                                with col2:
+                                    st.metric("Última Atualização", resultado.get('data_atualizacao', 'N/A'))
+                                
+                                st.write(f"**Localização:** {resultado.get('localizacao', 'N/A')}")
+                                
+                                if resultado.get('historico'):
+                                    st.subheader("📋 Histórico")
+                                    for evento in resultado['historico']:
+                                        st.write(f"• {evento['data']} - {evento['local']}: {evento['descricao']}")
+                            else:
+                                st.error("❌ Código não encontrado ou erro na consulta")
+                                with st.expander("Ver logs", expanded=False):
+                                    st.code(mostrar_ultimos_logs(10))
+                    except Exception as e:
+                        st.error(f"❌ Erro ao consultar: {str(e)}")
+            else:
+                st.warning("⚠️ Digite um código de rastreamento válido")
+        
         # upload também na página inicial
         uploaded_start = st.file_uploader(
             "📁 Carregar planilha de rastreamento (XLSX)", type=["xlsx"]
@@ -351,19 +412,30 @@ elif opcao == "📊 Visualizar Dados":
                 )
             
             with col2:
-                # slider requires min < max; ajuste dinâmico conforme tamanho do df
-                max_linhas = len(df)
-                if max_linhas <= 1:
-                    linhas_mostrar = 1
-                else:
-                    min_linhas = 1 if max_linhas < 5 else 5
-                    default_linhas = min(20, max_linhas)
-                    linhas_mostrar = st.slider("Linhas a mostrar:", min_linhas, max_linhas, default_linhas)
+                # Campo de busca por código de rastreamento
+                search_code = st.text_input(
+                    "🔍 Buscar por Código de Rastreamento:",
+                    help="Digite parte ou todo o código de rastreamento para filtrar"
+                )
             
             # Filtrar dados
             df_filtrado = df.copy()
             if status_filter and len(df.columns) > 2:
                 df_filtrado = df[df.iloc[:, 2].isin(status_filter)]
+            
+            # Filtrar por código de rastreamento se informado
+            if search_code and len(df.columns) > 1:
+                # Assume que a coluna de rastreamento é a segunda (índice 1)
+                df_filtrado = df_filtrado[df_filtrado.iloc[:, 1].astype(str).str.contains(search_code, case=False, na=False)]
+            
+            # Slider para linhas a mostrar
+            max_linhas = len(df_filtrado)
+            if max_linhas <= 1:
+                linhas_mostrar = 1
+            else:
+                min_linhas = 1 if max_linhas < 5 else 5
+                default_linhas = min(20, max_linhas)
+                linhas_mostrar = st.slider("Linhas a mostrar:", min_linhas, max_linhas, default_linhas)
             
             # Mostrar dados (usa largura do container)
             st.dataframe(df_filtrado.head(linhas_mostrar), use_container_width=True)  # type: ignore
@@ -381,8 +453,8 @@ elif opcao == "📊 Visualizar Dados":
                 st.metric("Registros Filtrados", len(df_filtrado))
             
             with col3:
-                if len(df.columns) > 2:
-                    status_series = df.iloc[:, 2]
+                if len(df_filtrado.columns) > 2:
+                    status_series = df_filtrado.iloc[:, 2]
                     mais_comum = status_series.mode()[0] if len(status_series.mode()) > 0 else "N/A"
                     st.metric("Status Mais Comum", mais_comum[:20])
             
