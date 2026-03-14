@@ -30,6 +30,17 @@ from main import OrquestradorRastreamento
 from utils import BackupManager
 from config import EXCEL_FILE_PATH
 
+# Importar arquitetura modular (core)
+try:
+    from core.services.container import ServiceContainer
+    container = ServiceContainer.create()
+    CORE_AVAILABLE = True
+    print("✅ Arquitetura modular carregada com sucesso!")
+except Exception as e:
+    print(f"⚠️ Arquitetura modular não disponível: {e}")
+    container = None
+    CORE_AVAILABLE = False
+
 # helper to show logs
 def mostrar_ultimos_logs(limit: int = 20):
     """Retorna as últimas linhas do mais recente arquivo de log."""
@@ -115,6 +126,13 @@ with st.sidebar:
 
     st.markdown("---")
     st.info("💡 Dica: Use o menu acima para navegar entre as funcionalidades")
+
+    # Status da arquitetura
+    st.markdown("---")
+    if CORE_AVAILABLE:
+        st.success("🧩 Arquitetura Modular: Ativa")
+    else:
+        st.warning("📦 Arquitetura Modular: Indisponível")
 
 # ============================================================================
 # PÁGINA: INÍCIO
@@ -520,6 +538,26 @@ elif opcao == "ℹ️ Sobre":
     ### 📞 Suporte
 
     Verifique os logs em `logs/` para mais informações sobre erros.
+
+    ### 🧩 Arquitetura Modular
+
+    Esta versão inclui uma arquitetura limpa e modular para melhor manutenibilidade:
+
+    **Status da Arquitetura:**
+    """ + ("✅ **Ativa** - Sistema usando arquitetura modular com IoC" if CORE_AVAILABLE else "⚠️ **Indisponível** - Sistema usando arquitetura legacy") + """
+
+    **Componentes:**
+    - 📦 **Value Objects**: TrackingCode, NFNumber (validação de domínio)
+    - 🏗️ **Entities**: TrackingRecord (entidades de negócio)
+    - 🔌 **Adapters**: API, Excel, Cache (abstração de infraestrutura)
+    - 🛠️ **Utils**: RateLimiter, RetryPolicy (utilitários robustos)
+    - 📱 **IoC Container**: Gerenciamento automático de dependências
+
+    **Benefícios:**
+    - 🔄 Fácil extensão para múltiplas transportadoras
+    - 🧪 Melhor testabilidade
+    - 🛡️ Separação clara de responsabilidades
+    - ⚡ Performance com cache e rate limiting
     """)
 
     st.markdown("---")
